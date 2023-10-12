@@ -12,6 +12,7 @@ RUN conda install -n base -c conda-forge -y numpy pandas matplotlib
 RUN conda install -n base -c conda-forge -y notebook
 RUN conda install -n base -c conda-forge -y scipy ipywidgets jupyter_contrib_nbextensions
 RUN jupyter nbextension enable --py widgetsnbextension
+RUN conda install -n base -c conda-forge -y nb_black
 
 COPY ./course /course
 
