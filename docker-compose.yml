@@ -1,4 +1,3 @@
-version: '3.4'
 
 services:
   python4:
@@ -11,3 +10,4 @@ services:
       - 80:80
     volumes:
       - ./course:/course
+      - ./course/day3/face.dat:/root/.cache/scipy-data/face.dat
